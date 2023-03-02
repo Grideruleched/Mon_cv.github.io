@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+/* html, body {margin: 0; height: 100%; overflow: hidden} */
+
+* {
+    /* border: red 1px solid; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: beige;
+}
+
+.container {
+
+    position: relative;
+    width: 100%;
+    max-width: 1550px;
+    height: 600px;
+    background: beige;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.profiltext {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profiltext .imgbx {
+
+    position: relative;
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profiltext .imgbx img {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.profiltext h2 {
+
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+
+.profiltext h2 span {
+
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+
+.titre {
+
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+
+.contactinfo ul {
+
+    position: relative;
+
+
+}
+
+
+.contactinfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contactinfo ul li .icon {
+
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+
+
+.contactinfo ul li span {
+
+    color: #fff;
+    font-weight: 300;
+}
+
+
+.contactinfo.education h5 {
+
+    color: #03a9f4;
+    font-weight: 500;
+}
+
+.contactinfo.education h4 {
+
+    color: #fff;
+    font-weight: 500;
+
+}
+
+
+
+
+.contactinfo.langage .pourcentage {
+
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+
+
+
+.contactinfo.langage .pourcentage div {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+
+.apropos {
+
+    margin-bottom: 10px;
+}
+
+.apropos:last-child {
+
+    margin-bottom: 0;
+}
+
+.titre2 {
+
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+
+p {
+
+    color: #333;
+}
+
+.container .cotegauche {
+
+    position: relative;
+    background: #003147;
+    padding: 10px;
+}
+
+.container .cotedroit {
+
+    position: relative;
+    background: beige;
+    padding-left: 20px;
+    margin-top: 18px;
+}
+
+
+.apropos .box {
+
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+}
+
+.apropos .box .anneeexp {
+
+    min-width: 150px;
+}
+
+.apropos .box .anneeexp h5 {
+
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.apropos .box .text h4 {
+
+    text-transform: uppercase;
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+.competences .box {
+    display: flex;
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.competences .box h4 {
+
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+
+.competences .box p {
+
+    color: white;
+}
+
+.competences .box .pourcentage {
+
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+}
+
+.competences .box .pourcentage div {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.loisirs .titre2 {
+
+    margin-top: 20px;
+}
+
+.loisirs ul {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.loisirs ul li {
+
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.loisirs ul li .fa {
+
+    color: #03a9f4;
+    font-size: 28px;
+    width: 30px;
+}
+
+@media (max-width: 800px) {
+
+    .container {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .loisirs ul {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .apropos .box {
+
+        flex-direction: column;
+    }
+
+    .apropos .box .anneeexp {
+
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+
+    .loisirs ul {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
